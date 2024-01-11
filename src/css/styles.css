@@ -37,3 +37,60 @@ img {
   width: 400px;
   object-fit: cover;
 }
+
+.feedback-form {
+  display: block;
+  padding: 24px;
+  width: 408px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+
+  font-size: 16px;
+}
+
+.input {
+  height: 40px;
+  margin-top: 8px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  resize: none;
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  width: 360px;
+}
+
+.input:hover,
+.input:focus {
+  border: 1px solid #000;
+}
+
+.btn-form {
+  margin-top: 8px;
+}
+
+.btn-form {
+  padding: 8px 16px;
+
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 8px;
+  border: none;
+  background: #4e75ff;
+}
+
+.btn-form:hover,
+.btn-form:focus {
+  background: #6c8cff;
+}
