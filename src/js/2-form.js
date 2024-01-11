@@ -11,10 +11,8 @@ const savedData = localStorage.getItem(localStorageKey);
 if (savedData) {
   try {
     const parsedData = JSON.parse(savedData);
-    if (parsedData.email && parsedData.message) {
-      emailInput.value = parsedData.email;
-      messageInput.value = parsedData.message;
-    }
+    emailInput.value = parsedData.email;
+    messageInput.value = parsedData.message;
   } catch (error) {
     console.log(error.name);
     console.log(error.message);
@@ -36,6 +34,7 @@ feedbackForm.addEventListener('submit', evt => {
     return;
   }
   localStorage.removeItem(localStorageKey);
+
   console.log({
     email: emailInput.value.trim(),
     message: messageInput.value.trim(),
